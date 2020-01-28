@@ -1,11 +1,8 @@
+/* eslint-disable react/jsx-closing-bracket-location */
 import React from 'react';
-// import PropTypes from 'prop-types';
-// import SomeContext from '../SomeContext';
 import style from './style.css';
-// className={style['component-style']}
-const TipIcon = () => {
-  // const { testContext } = React.useContext(SomeContext);
 
+const TipIcon = () => {
   return (
     <button
       aria-label="Show info."
@@ -14,10 +11,5 @@ const TipIcon = () => {
     ></button>
   );
 };
-
-// TipIcon.propTypes = {
-//   // eslint-disable-next-line react/forbid-prop-types
-//   children: PropTypes.any,
-// };
 
 export default TipIcon;

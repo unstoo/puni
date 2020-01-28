@@ -2,20 +2,20 @@ import React from 'react';
 import ButtonStd from '../ButtonStd';
 import style from './style.css';
 
-const currenciesList = [
-  {
-    currency: 'eur',
-    ratio: 1,
-  },
-  {
-    currency: 'usd',
-    ratio: 0.9,
-  },
-  {
-    currency: 'rub',
-    ratio: 0.065,
-  },
-];
+// const currenciesList = [
+//   {
+//     currency: 'eur',
+//     ratio: 1,
+//   },
+//   {
+//     currency: 'usd',
+//     ratio: 0.9,
+//   },
+//   {
+//     currency: 'rub',
+//     ratio: 0.065,
+//   },
+// ];
 
 const CurrencyExchenger = () => (
   <div className={style['component-style']}>

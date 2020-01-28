@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import style from './style.css';
 
 const SearchBar = () => {
@@ -9,10 +8,6 @@ const SearchBar = () => {
       <button className={style.button} type="button" aria-label="Find button" />
     </div>
   );
-};
-
-SearchBar.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
 };
 
 export default SearchBar;

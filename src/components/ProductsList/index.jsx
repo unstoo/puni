@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-closing-bracket-location */
+/* eslint-disable react/prop-types */
 import React from 'react';
-import SomeContext from '../SomeContext';
+// import SomeContext from '../SomeContext';
 import ButtonStd from '../ButtonStd';
 // import PropTypes from 'prop-types';
 import style from './style.css';
@@ -23,9 +25,9 @@ const productsList = [
 ];
 
 const ProductsList = () => {
-  const { testContext } = React.useContext(SomeContext);
+  // const { testContext } = React.useContext(SomeContext);
   const products = productsList.map(product => {
-    return <Product key={product.productLink} data={product} />
+    return <Product key={product.productLink} data={product} />;
   });
 
   return (
@@ -39,7 +41,10 @@ const Product = ({ data }) => {
   const { title, productLink, bgUrl } = data;
 
   return (
-    <li className={style.productItem} style={{ backgroundImage: `url(${bgUrl})` }}>
+    <li
+      className={style.productItem}
+      style={{ backgroundImage: `url(${bgUrl})` }}
+    >
       <div className={style.prodctHeader}>{title}</div>
       <ButtonStd redirect={productLink}>READ MORE</ButtonStd>
     </li>

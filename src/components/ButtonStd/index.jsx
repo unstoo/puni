@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from './style.css';
 
-const Button = ({ children, buttonIcon = "+" }) => {
+const Button = ({ children, buttonIcon = '+' }) => {
   const shouldPrintPlus = buttonIcon === '+' ? '+' : '';
   const composedStyle = [
     style.customIcon,
@@ -21,6 +21,7 @@ const Button = ({ children, buttonIcon = "+" }) => {
 
 Button.propTypes = {
   children: PropTypes.string,
+  buttonIcon: PropTypes.string,
 };
 
 export default Button;

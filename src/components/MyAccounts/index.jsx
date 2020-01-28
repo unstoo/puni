@@ -1,7 +1,9 @@
+/* eslint-disable react/jsx-closing-bracket-location */
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
-import style from './style.css';
 import ButtonStd from '../ButtonStd';
+import style from './style.css';
+// import PropTypes from 'prop-types';
 
 const accountsData = [
   {
@@ -18,7 +20,7 @@ const accountsData = [
   },
 ];
 
-const MyAccounts = ({ children }) => (
+const MyAccounts = () => (
   <div className={style['component-style']}>
     <h2 className={style.header}>My accounts</h2>
     <ul className={style['accounts-list']}>
@@ -29,10 +31,7 @@ const MyAccounts = ({ children }) => (
 );
 
 const Account = ({ data }) => {
-  console.log(data.data);
   const { currency, balance, income, expense } = data;
-  console.log("currency");
-  console.log(currency);
   return (
     <li className={style.account}>
       <div className={style.accountBalanceRow}>
@@ -58,9 +57,9 @@ const Account = ({ data }) => {
   );
 };
 
-MyAccounts.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  children: PropTypes.any,
-};
+// MyAccounts.propTypes = {
+//   // eslint-disable-next-line react/forbid-prop-types
+//   data: PropTypes.any,
+// };
 
 export default MyAccounts;

@@ -39,6 +39,7 @@ module.exports = {
     compress: true,
     hot: true,
     port: '3030',
+    host: '0.0.0.0',
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 };
