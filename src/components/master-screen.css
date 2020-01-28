@@ -1,0 +1,7 @@
+.master-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    background-color: white;
+}

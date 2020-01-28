@@ -1,0 +1,8 @@
+.tipIcon{
+    height: 18px;
+    width: 18px;
+    background: none;
+    border: none;
+    background-image: url('/icon-tip-orange.png');
+    background-repeat: no-repeat;
+}

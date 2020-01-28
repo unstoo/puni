@@ -1,0 +1,126 @@
+.component-style{
+    width: 620px;
+    margin-bottom: 65px;
+    margin-right: 95px;
+}
+
+.accounts-list{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.accounts-list li{
+    display: block;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #e9f2f2;
+    margin-right: 20px;
+}
+
+.accounts-list li:last-of-type {
+    margin-right: 0px;
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #363636;
+    font-family: "ProximaNova", sans-serif;
+}
+
+.account{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.accountBalanceRow{
+    display: flex;
+    margin-bottom: 30px;
+    padding-left: 14px;
+}
+
+.accountBalance{
+    margin-right: auto;
+    font-size: 22px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #ff9b0f;
+    font-family: "ProximaNova", sans-serif;
+}
+
+.accountCurrency-eur,
+.accountCurrency-usd{
+    width: 18px;
+    height: 19px;
+    background-repeat: no-repeat;
+}
+
+.accountCurrency-eur{
+    background-image: url("/icon-eur.png"); 
+}
+
+.accountCurrency-usd{
+    background-image: url("/icon-usd.png"); 
+}
+
+.accountIncome{
+    margin-bottom: 20px;
+}
+
+.icon-income{
+    position: relative;
+}
+
+.icon-income::before {
+    content: '';
+    position: absolute;
+    left: -22px;
+    height: 17px;
+    width: 17px;
+    background-image: url('/icon-income.png');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position-y: 2px;;
+}
+
+.accountExpense{
+    margin-bottom: 20px;
+}
+
+.icon-expense{
+    position: relative;
+}
+
+
+.icon-expense::before {
+    content: '';
+    position: absolute;
+    left: -21px;
+    height: 17px;
+    width: 17px;
+    background-image: url('/icon-expense.png');
+    background-repeat: no-repeat;
+    background-size: 10px;
+}
+
+.accountIncome,
+.accountExpense {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: normal;
+    color: #363636;
+    font-family: "ProximaNova", sans-serif;
+}
+
+.buttonsRow{
+    display: flex;
+    justify-content: space-between;
+}

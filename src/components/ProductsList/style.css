@@ -1,0 +1,39 @@
+.component-style{
+    width: 620px;
+    margin-bottom: 60px;
+    margin-right: 95px;
+}
+
+.products-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.productItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 147px;
+    width: 180px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    background-color: #2b3241;
+    color: #ffffff;
+}
+
+.prodctHeader{
+    height: 31px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #2b3241;
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: bold;
+    font-family: "ProximaNova", sans-serif;
+    color: #ffffff;
+}
