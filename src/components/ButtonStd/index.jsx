@@ -11,7 +11,7 @@ const Button = ({ children, buttonIcon = '+' }) => {
 
   return (
     <button type="button" className={style['component-style']}>
-      <div className={style.button}>
+      <div className={style.buttonRow}>
         <div className={style.buttonLabel}>{children}</div>
         <div className={composedStyle}>{shouldPrintPlus}</div>
       </div>

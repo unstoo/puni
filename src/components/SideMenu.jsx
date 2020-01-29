@@ -1,26 +1,50 @@
 /* eslint-disable react/jsx-closing-bracket-location */
-import React from 'react';
-import sideMenu from './side-menu.css';
+import React, { useState } from 'react';
+import style from './side-menu.css';
 
-const SideMenu = () => (
-  <div className={sideMenu['side-menu']}>
-    <div className={sideMenu.logo}>
-      <img alt="Pays Union logotype" src="/icon-logo.png" />
-    </div>
-    <button
-      className={sideMenu.menuToggler}
-      type="button"
-      aria-label="Toggle menu"
-    ></button>
-    <div className={sideMenu.navItem + ' ' + sideMenu.zero}>Dashboard</div>
-    <div className={sideMenu.navItem + ' ' + sideMenu.one}>Bank</div>
-    <div className={sideMenu.navItem + ' ' + sideMenu.two}>Cards</div>
-    <div className={sideMenu.navItem + ' ' + sideMenu.three}>Audit</div>
-    <div className={sideMenu.navItem + ' ' + sideMenu.four}>ATM</div>
-    <div className={sideMenu.navItem + ' ' + sideMenu.five}>POS</div>
-    <div className={sideMenu.navItem + ' ' + sideMenu.six}>Save</div>
-    <div className={sideMenu.navItem + ' ' + sideMenu.seven}>Donates</div>
-  </div>
-);
+const SideMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+  const menuState = isOpen ? style.menuOpen : style.menuClosed;
+  return (
+    <nav className={style['side-menu'] + ' ' + menuState}>
+      <div className={style.logo}>
+        <div>Pays Union</div>
+      </div>
+      <button
+        onClick={toggle}
+        className={style.menuToggler}
+        type="button"
+        aria-label="Toggle menu"
+      ></button>
+      <a href="/" className={style.navItem + ' ' + style.zero}>
+        <div>Dashboard</div>
+      </a>
+      <a className={style.navItem + ' ' + style.one}>
+        <div>Bank transfers</div>
+      </a>
+      <a className={style.navItem + ' ' + style.two}>
+        <div>Bank cards</div>
+      </a>
+      <a className={style.navItem + ' ' + style.three}>
+        <div>Accuiring</div>
+      </a>
+      <a className={style.navItem + ' ' + style.four}>
+        <div>ATM</div>
+      </a>
+      <a className={style.navItem + ' ' + style.five}>
+        <div>POS</div>
+      </a>
+      <a className={style.navItem + ' ' + style.six}>
+        <div>Stock</div>
+      </a>
+      <a className={style.navItem + ' ' + style.seven}>
+        <div>Donations</div>
+      </a>
+    </nav>
+  );
+};
 
 export default SideMenu;

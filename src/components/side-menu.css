@@ -1,12 +1,21 @@
 .side-menu{
     position: relative;
-    padding-left: 18px;
     font-size: 2rem;
-    width: 128px;
     background-color: #f7fcfc;
     border-right: 1px solid #e9f2f2;
     display: flex;
     flex-direction: column;
+    transition: ease-in-out 0.3s;
+}
+
+.menuOpen{
+    width: 269px;
+    padding-left: 70px;
+}
+
+.menuClosed{
+    padding-left: 18px;
+    width: 128px;
 }
 
 .menuToggler {
@@ -23,6 +32,18 @@
     background-image: url('/icon-button-arrow.png');
     background-repeat: no-repeat;
     background-position: center;
+    transition: ease-in-out 0.3s; 
+}
+
+.menuOpen .menuToggler{
+    left: 255px;
+    transition: ease-in-out 0s; 
+}
+
+.menuToggler:hover{
+    background-color: #e6780e;
+    transition: ease-in-out 0.3s;    
+    box-shadow: 4px 8px 6.65px 0.35px rgba(255, 155, 15, 0.43);
 }
 
 .logo {
@@ -30,15 +51,46 @@
     width: 96px;
     margin-bottom: 75px;
     margin-top: 30px;
+    background-image: url("/icon-logo.png");
+    font-size: 0;
+    transition: ease-in-out 0.3s; 
+}
+
+.menuOpen .logo {
+    height: 21px;
+    width: 164px;
+    margin-bottom: 75px;
+    margin-top: 30px;
+    background-image: url("/logo-big.png");
 }
 
 .navItem{
-    font-size: 18px;
+    display: flex;
     height: 75px;
+    margin-right: 18px;
     background-repeat: no-repeat;
     background-position-x: center;
-    margin-right: 18px;
     font-size: 0;
+    color: #363636;
+    text-decoration: none;
+    font-family: "ProximaNova", sans-serif;
+    transition: cubic-bezier(0.68, -0, 0.265, 1.55) 0.3s; 
+}
+
+.navItem div{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuOpen .navItem{
+    width: 127px;
+    height: 82px;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border: 1px solid #ff9b0f;
+    background-position-y: 14px;
+    font-size: 14px;
 }
 
 .zero{

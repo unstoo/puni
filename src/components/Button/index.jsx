@@ -4,7 +4,7 @@ import style from './style.css';
 
 const Button = ({ children }) => (
   <button type="button" className={style['component-style']}>
-    <div className={style.button}>
+    <div className={style.buttonRow}>
       <div>{children}</div>
       <div className={style['icon-logout']}></div>
     </div>
