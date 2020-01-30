@@ -1,0 +1,41 @@
+ <footer>
+        <div class="footer wrap row align-items-center d-flex justify-content-lg-between justify-content-center">
+            <div class="navbar-brand col-lg-2 col-md-12 col-sm-12 d-flex justify-content-lg-between justify-content-center p-3">
+                <a href="/"><img src="./img/footer_logo.png" alt="" /></a>
+            </div>
+            <div class="col-lg-7 row col-md-12 col-sm-12 d-flex justify-content-lg-between justify-content-md-between justify-content-center p-3">
+				<div class="col-lg-3 col-md-3 col-sm-3 row align-items-end">
+					<ul class="list-unstyled">
+						<li><a href="personal-account.html">Personal / business account</a></li>
+						<li><a href="personal-bank-cards.html">Personal bank cards</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 row align-items-end">
+					<ul class="list-unstyled">
+						<li><a href="bank-transfers.html">Bank transfers</a></li>
+						<li><a href="merchant-account.html">Merchant account</a></li>
+						<li><a href="internet-acquiring.html">Internet acquiring</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 row align-items-end">
+					<ul class="list-unstyled">
+						<li><a href="cards-emission.html">Cards emission</a></li>
+						<li><a href="payment-processing.html">Payment processing</a></li>
+						<li><a href="payment-terminals.html">Payment terminals</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 row align-items-end">
+					<ul class="list-unstyled">
+						<li><a href="pos.html">POS</a></li>
+						<li><a href="stock.html">Stock</a></li>
+						<li><a href="partner-programs.html">Partner programs</a></li>
+						<li><a href="donation.html">Donation</a></li>
+					</ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-lg-between justify-content-center p-3 p-3">
+                <button type="button" class="btn hvr-ripple-out light">Log In</button>
+                <button type="button" class="btn hvr-ripple-out orange">Sign Up</button>
+            </div>
+        </div>
+    </footer>

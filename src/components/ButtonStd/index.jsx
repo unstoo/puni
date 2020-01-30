@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-closing-bracket-location */
 import React from 'react';
 import PropTypes from 'prop-types';
 import style from './style.css';
 
-const Button = ({ children, buttonIcon = '+' }) => {
+const Button = ({ children, buttonIcon = '+', clickHandler }) => {
   const shouldPrintPlus = buttonIcon === '+' ? '+' : '';
   const composedStyle = [
     style.customIcon,
@@ -10,7 +11,11 @@ const Button = ({ children, buttonIcon = '+' }) => {
   ].join(' ');
 
   return (
-    <button type="button" className={style['component-style']}>
+    <button
+      onClick={clickHandler}
+      type="button"
+      className={style['component-style']}
+    >
       <div className={style.buttonRow}>
         <div className={style.buttonLabel}>{children}</div>
         <div className={composedStyle}>{shouldPrintPlus}</div>
@@ -22,6 +27,7 @@ const Button = ({ children, buttonIcon = '+' }) => {
 Button.propTypes = {
   children: PropTypes.string,
   buttonIcon: PropTypes.string,
+  clickHandler: PropTypes.func,
 };
 
 export default Button;

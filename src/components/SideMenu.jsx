@@ -20,28 +20,36 @@ const SideMenu = () => {
         aria-label="Toggle menu"
       ></button>
       <a href="/" className={style.navItem + ' ' + style.zero}>
-        <div>Dashboard</div>
+        <div className={style.frame}></div>
+        <div className={style.label}>Dashboard</div>
       </a>
       <a className={style.navItem + ' ' + style.one}>
-        <div>Bank transfers</div>
+        <div className={style.frame}></div>
+        <div className={style.label}>Bank transfers</div>
       </a>
       <a className={style.navItem + ' ' + style.two}>
-        <div>Bank cards</div>
+        <div className={style.frame}></div>
+        <div className={style.label}>Bank Cards</div>
       </a>
       <a className={style.navItem + ' ' + style.three}>
-        <div>Accuiring</div>
+        <div className={style.frame}></div>
+        <div className={style.label}>Accuring</div>
       </a>
       <a className={style.navItem + ' ' + style.four}>
-        <div>ATM</div>
+        <div className={style.frame}></div>
+        <div className={style.label}>ATM</div>
       </a>
       <a className={style.navItem + ' ' + style.five}>
-        <div>POS</div>
+        <div className={style.frame}></div>
+        <div className={style.label}>POS</div>
       </a>
       <a className={style.navItem + ' ' + style.six}>
-        <div>Stock</div>
+        <div className={style.frame}></div>
+        <div className={style.label}>Stock</div>
       </a>
       <a className={style.navItem + ' ' + style.seven}>
-        <div>Donations</div>
+        <div className={style.frame}></div>
+        <div className={style.label}>Donations</div>
       </a>
     </nav>
   );

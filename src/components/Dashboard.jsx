@@ -18,6 +18,7 @@ import ProductsList from './ProductsList';
 import MyCards from './MyCards';
 // import SomeContext from './SomeContext'
 import Button from './Button';
+import Footer from './Footer';
 
 const propsAccountHeader = {
   accountHolderName: 'Fyodor Dostoevsky',
@@ -79,32 +80,35 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <div className={appContainer['app-container']}>
-        <SideMenu>menu</SideMenu>
-        {/* <SomeContext.Provider value={this.state.MasterScreenData}> */}
-        <MasterScreen>
-          <SearchBlock>
-            <SearchBar />
-            <TipIcon />
-          </SearchBlock>
-          <MyAccounts />
-          <CurrencyExchenger />
-          <ProductsList />
-        </MasterScreen>
-        {/* </SomeContext.Provider> */}
-        <TransactionScreen>
-          <AccountHeader
-            accountHolderName={propsAccountHeader.accountHolderName}
-            accountStatus={propsAccountHeader.accountStatus}
-            accountId={propsAccountHeader.accountId}
-            interfaceLanguage={propsAccountHeader.interfaceLanguage}
-          >
-            <Button>Log out</Button>
-          </AccountHeader>
-          <LastOperations operations={propsLastOperations} />
-          <MyCards />
-        </TransactionScreen>
-      </div>
+      <>
+        <div className={appContainer['app-container']}>
+          <SideMenu>menu</SideMenu>
+          {/* <SomeContext.Provider value={this.state.MasterScreenData}> */}
+          <MasterScreen>
+            <SearchBlock>
+              <SearchBar />
+              <TipIcon />
+            </SearchBlock>
+            <MyAccounts />
+            <CurrencyExchenger />
+            <ProductsList />
+          </MasterScreen>
+          {/* </SomeContext.Provider> */}
+          <TransactionScreen>
+            <AccountHeader
+              accountHolderName={propsAccountHeader.accountHolderName}
+              accountStatus={propsAccountHeader.accountStatus}
+              accountId={propsAccountHeader.accountId}
+              interfaceLanguage={propsAccountHeader.interfaceLanguage}
+            >
+              <Button>Log out</Button>
+            </AccountHeader>
+            <LastOperations operations={propsLastOperations} />
+            <MyCards />
+          </TransactionScreen>
+        </div>
+        <Footer />
+      </>
     );
   }
 }

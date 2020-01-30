@@ -20,7 +20,7 @@ const AccountHeader = ({children,accountHolderName,accountStatus,accountId,inter
     </div>
     <div className={style['component-style__right-col']}>
       {children}
-      <i aria="hidden" className={style['icon-logout']}></i>
+      <i aria-label="decoration icon" className={style['icon-logout']}></i>
     </div>
   </div>
 );

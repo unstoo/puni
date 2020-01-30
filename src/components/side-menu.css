@@ -18,7 +18,7 @@
     width: 128px;
 }
 
-.menuToggler {
+.menuToggler{
     position: absolute;
     top: 135px;
     left: 115px;
@@ -56,7 +56,7 @@
     transition: ease-in-out 0.3s; 
 }
 
-.menuOpen .logo {
+.menuOpen .logo{
     height: 21px;
     width: 164px;
     margin-bottom: 40px;
@@ -65,32 +65,62 @@
 }
 
 .navItem{
+    position: relative;
     display: flex;
     height: 75px;
     width: 40px;
     background-repeat: no-repeat;
     background-position-x: center;
-    font-size: 0;
     color: #363636;
     text-decoration: none;
     font-family: "ProximaNova", sans-serif;
     transition: cubic-bezier(0.68, -0, 0.265, 1.55) 0.3s; 
 }
 
-.navItem div{
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+.navItem .label{
+    /* font-size: 0; */
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: -900px;
+    bottom: 10px;
+    transition: ease-in-out 0.3s; 
+}
+
+.navItem .frame{
+    position: absolute;
+    left: -900px;
+    width: 127px;
+    height: 82px;
+    border: 1px solid #ff9b0f;
+    
+    transition: ease-in-out 0.3s; 
 }
 
 .menuOpen .navItem{
     width: 127px;
     height: 82px;
     margin-bottom: 10px;
-    padding-bottom: 12px;
-    border: 1px solid #ff9b0f;
     background-position-y: 14px;
-    font-size: 14px;
+    position: relative;
+}
+
+.menuOpen .label{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 10px;
+    transition: ease-in-out 0.3s; 
+}
+
+.menuOpen .frame{
+    left: 0;
+    width: 127px;
+    height: 82px;
+    border: 1px solid #ff9b0f;
+    
+    transition: ease-in-out 0.3s; 
 }
 
 .zero{

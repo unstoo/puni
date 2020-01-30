@@ -27,7 +27,7 @@ const productsList = [
 const ProductsList = () => {
   // const { testContext } = React.useContext(SomeContext);
   const products = productsList.map(product => {
-    return <Product key={product.productLink} data={product} />;
+    return <Product key={product.title} data={product} />;
   });
 
   return (
