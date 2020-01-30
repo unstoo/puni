@@ -62,7 +62,7 @@ const CurrencyExchenger = () => {
       {/* <div className={style.componentStateMonitor}>
         {`
           inputOne: ${inputOne}
-          currencyOne: ${currencyOne} 
+          currencyOne: ${currencyOne}
         `}
         <br />
         {`

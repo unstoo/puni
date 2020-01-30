@@ -25,7 +25,8 @@ const MyAccounts = () => (
     <h2 className={style.header}>My accounts</h2>
     <ul className={style['accounts-list']}>
       <Account data={accountsData[0]} />
-      <Account data={accountsData[1]} />
+      <NewAccountPlaceholder />
+      {/* <Account data={accountsData[1]} /> */}
     </ul>
   </div>
 );
@@ -53,6 +54,18 @@ const Account = ({ data }) => {
         <ButtonStd>ADD FUNDS</ButtonStd>
         <ButtonStd buttonIcon="arrow">SEND FUNDS</ButtonStd>
       </div>
+    </li>
+  );
+};
+
+const NewAccountPlaceholder = () => {
+  return (
+    <li className={style.accountPlaceholder}>
+      <button
+        className={style.addAccountButton}
+        aria-label="Add new account"
+        type="button"
+      ></button>
     </li>
   );
 };
