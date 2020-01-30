@@ -1,3 +1,11 @@
+.componentStateMonitor{
+    background: white;
+    border: gold 2px solid;
+    position: fixed;
+    left: 30%;
+    top: 0;
+    padding: 8px;
+}
 .component-style{
     margin-bottom: 80px;
     margin-right: 95px;
@@ -51,6 +59,10 @@
     color: #363636;
 }
 
+.selectContainer{
+    position: relative;
+}
+
 .select{
     position: relative;
     padding-left: 10px;
@@ -65,12 +77,65 @@
     color: #ff9b0f;
 }
 
+.cellsContainer{
+    position: absolute;
+}
+
+.cellsContainer.open{
+    height:auto;
+}
+
+.cellsContainer.closed{
+    height: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cellsContainer.closed .cell{
+    height: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cell{
+    padding-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    border: solid 1px #e9f2f2;
+    border-top: none;
+    background-color: #f5fbfb;
+    color: #ff9b0f;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cell:hover{
+    background-color: #dbebeb;
+}
+
+.cell.eur{
+    background-image: url('/icon-currency-eur.png');
+}
+
+.cell.usd{
+    background-image: url('/icon-usd.png');
+}
+
+
 .icon-currency {
     width: 15px;
     height: 15px;
-    background-image: url('/icon-currency-eur.png');
     background-repeat: no-repeat;
     background-position-y: 0px;
+}
+.icon-currency.eur{
+    background-image: url('/icon-currency-eur.png');
+}
+.icon-currency.usd{
+    background-image: url('/icon-usd.png');
 }
 
 .down-arrow{
