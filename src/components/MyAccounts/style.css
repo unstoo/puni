@@ -45,7 +45,7 @@
     background-position: center;
 }
 
-.addAccountButton:before {
+.addAccountButton::before {
     content: "";
     position: absolute;
     width: 25px;
@@ -54,7 +54,7 @@
     transition: all 0.5s linear;
  }
  
- .addAccountButton:hover:before {
+ .addAccountButton:hover::before {
      transform:rotate(360deg);
  }
 

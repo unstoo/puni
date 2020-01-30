@@ -187,6 +187,57 @@
     color: rgba(54,54,54,0.7);
 }
 
+.button{
+    position: relative;
+    font-size: 14px;
+}
+
+.button.tip span {
+    display: none;
+    position: absolute;
+    width: 122px;
+    height: 50px;
+    top: -64px;
+    left: -55px;
+    -moz-border-radius: 5px; /* this works only in camino/firefox */
+    -webkit-border-radius: 5px; /* this is just for Safari */
+    box-shadow: 2px 3px 7px 1px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #363636;
+    font-family: "ProximaNova", sans-serif;
+
+}
+.button.tip span:before{
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+    
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent; 
+    border-top:8px solid white;
+    left: 54px;
+    bottom: -8px;
+}
+
+
+
+.button:hover.tip {
+     /* font-size: 99%; this is just for IE */
+}
+
+
+.button:hover.tip span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .fee{
     font-weight: bold;
     font-size: 14px;

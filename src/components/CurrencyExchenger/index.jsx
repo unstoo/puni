@@ -108,7 +108,9 @@ const CurrencyExchenger = () => {
           <div className={style.infoBox}>
             <div className={style.info}>
               <span>Exchange Fee</span>
-              <button type="button">?</button>
+              <button type="button" className={style.button + ' ' + style.tip}>
+                ?<span>1% (min. 1 EUR)</span>
+              </button>
             </div>
             <div className={style.fee}>1 EUR</div>
           </div>
