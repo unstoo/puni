@@ -7,6 +7,7 @@
     color: rgba(225, 225, 225, 0.8);
     font-weight: normal;
     font-family: ProximaNova, sans-serif;
+    width: 100%;
 }
 
 .component-style::before{
@@ -19,7 +20,6 @@
     background-image: url('/footer_background.png');
     background-repeat: no-repeat;
     background-position-x: -240px;
-
 }
 
 .paragraph{

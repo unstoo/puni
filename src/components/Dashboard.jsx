@@ -60,6 +60,22 @@ const propsLastOperations = [
     date: '2020-08-16',
     label: 'Alexander Block',
   },
+  {
+    transactionType: 'credit',
+    status: 'complete',
+    amount: 7611.0,
+    currency: 'usd',
+    date: '2020-08-16',
+    label: 'Card *7777',
+  },
+  {
+    transactionType: 'credit',
+    status: 'complete',
+    amount: 5549.0,
+    currency: 'usd',
+    date: '2020-08-16',
+    label: 'Card *3778',
+  },
 ];
 
 class Dashboard extends React.Component {
@@ -107,7 +123,7 @@ class Dashboard extends React.Component {
             <MyCards />
           </TransactionScreen>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </>
     );
   }

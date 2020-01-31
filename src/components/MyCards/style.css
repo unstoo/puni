@@ -44,7 +44,7 @@
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    width: 100%;
+    min-width: 242px;
     height: 145px;
     border-radius: 8px;
     background-color: #2b3241;
@@ -88,7 +88,7 @@
 .iconWifi{
     position: absolute;
     right: 28px;
-    bottom: 28px;
+    bottom: 22px;
     width: 16px;
     height: 20px;
     background-image: url('/visaCard-wifi.png');

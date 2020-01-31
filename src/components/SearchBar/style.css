@@ -1,6 +1,6 @@
 .search-bar{
-    width: 298px;
-    height: 37px;
+    width: 450px;
+    height: 52px;
     display: flex;
 }
 
@@ -29,7 +29,7 @@
     background-image: url("/icon-searchglass.png");
     background-repeat: no-repeat;
     background-position-x: 8px;
-    background-position-y: 11px;
+    background-position-y: 20px;
 }
 
 /* .button::after {

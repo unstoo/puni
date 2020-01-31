@@ -1,5 +1,5 @@
 .component-style{
-    margin-bottom: 155px;
+    margin-bottom: 86px;
 }
 
 .headerRow{
@@ -35,8 +35,21 @@
 
 .tx{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding-top: 4px;
 }
+
+.tx:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
 .tx:last-of-type{
     margin-bottom: 0px;
 }
@@ -69,7 +82,7 @@
 }
 
 .label{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 14px;
     font-weight: bold;
     color: #363636;
@@ -103,7 +116,7 @@
 }
 
 .tx-col1 > div{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .icon-tx-debit{
@@ -120,7 +133,7 @@
     background-image: url('/icon-tx-debitInner.png');
     background-repeat: no-repeat;
     background-position-x: 6px;
-    background-position-y: 2px;
+    background-position-y: 3px;
 }
 
 .icon-tx-credit{
@@ -138,12 +151,20 @@
     background-repeat: no-repeat;
 }
 .icon-tx-pending{
-    height: 20px;
-    width: 20px;
+    background: none;
+    border: none;
+    height: 18px;
+    width: 18px;
     background-image: url('/icon-tx-pending.png');
     background-repeat: no-repeat;
-
+    background-position: -2px -2px;
+    transition: all 0.5s linear;
 }
+
+.icon-tx-pending:hover{
+    transform:rotate(360deg);
+}
+
 .icon-tx-complete{
     height: 20px;
     width: 20px;

@@ -1,9 +1,8 @@
-/* eslint-disable react/jsx-closing-bracket-location */
 import React from 'react';
 import PropTypes from 'prop-types';
 import style from './style.css';
 
-const Button = ({ children, buttonIcon = '+', clickHandler }) => {
+const ButtonWithIcon = ({ children, buttonIcon = '+', clickHandler }) => {
   const shouldPrintPlus = buttonIcon === '+' ? '+' : '';
   const composedStyle = [
     style.customIcon,
@@ -24,10 +23,10 @@ const Button = ({ children, buttonIcon = '+', clickHandler }) => {
   );
 };
 
-Button.propTypes = {
+ButtonWithIcon.propTypes = {
   children: PropTypes.string,
   buttonIcon: PropTypes.string,
   clickHandler: PropTypes.func,
 };
 
-export default Button;
+export default ButtonWithIcon;

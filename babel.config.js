@@ -14,6 +14,7 @@ module.exports = function(api) {
       },
     ],
     '@babel/preset-react',
+    '@babel/preset-flow',
   ];
   const plugins = [
     '@babel/transform-react-constant-elements',

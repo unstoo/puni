@@ -41,10 +41,14 @@ const Operation = ({ data }) => {
           aria-label={`transation type: ${transactionType}`}
           className={style['icon-tx-' + transactionType]}
         ></div>
-        <div
-          aria-label={`transation status: ${status}`}
-          className={style['icon-tx-' + status]}
-        ></div>
+        {status === 'pending' && (
+          <button
+            title="Repeat this transaction"
+            type="button"
+            aria-label="Repeat transaction"
+            className={style['icon-tx-' + status]}
+          ></button>
+        )}
       </div>
       <div className={style['tx-col2']}>
         <div className={style.label}>{label}</div>

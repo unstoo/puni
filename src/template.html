@@ -15,6 +15,78 @@
         body{
             margin: 0;
         }
+        .component-style{
+    position: relative;
+    height: 160px;
+    background-color: #2b3241;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(225, 225, 225, 0.8);
+    font-weight: normal;
+    font-family: ProximaNova, sans-serif;
+    min-width: 1200px;
+}
+
+.component-style::before{
+    content: '';
+    position: absolute;
+    top: -37px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-image: url('/footer_background.png');
+    background-repeat: no-repeat;
+    background-position-x: -240px;
+    min-width: 1200px;
+}
+
+.paragraph{
+    width: 340px;
+    margin-left: 100px;
+    margin-right: 90px;
+}
+
+.footer{
+    display: flex;
+    padding-top: 30px;
+}
+
+.links{
+    display: flex;
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-right: 92px;
+}
+
+.links ul:last-of-type {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(225, 225, 225, 0.8);
+}
+
+.links li:first-of-type {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.help{
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,6 +98,65 @@
 </noscript>
 
 <div id="app"></div>
+<footer class='component-style footer'>
+    <p class='paragraph'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris
+    </p>
+    <div class='links'>
+      <ul>
+        <li>Products</li>
+        <li>
+          <a href="">Bank transfers</a>
+        </li>
+        <li>
+          <a href="">ATM</a>
+        </li>
+        <li>
+          <a href="">Bank cards</a>
+        </li>
+      </ul>
+      <ul>
+        <li>Pricing</li>
+        <li>
+          <a href="">Personal</a>
+        </li>
+        <li>
+          <a href="">Freelance</a>
+        </li>
+        <li>
+          <a href="">Company</a>
+        </li>
+      </ul>
 
+      <ul>
+        <li>About company</li>
+        <li>
+          <a href="">About us</a>
+        </li>
+        <li>
+          <a href="">Contacts</a>
+        </li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Documents</li>
+          <li>
+            <a href="">TOC</a>
+          </li>
+          <li>
+            <a href="">Privacy policy</a>
+          </li>
+          <li>
+            <a href="">AML</a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <ul class='help'>
+      <li>Help</li>
+    </ul>
+  </footer>
 </body>
 </html>

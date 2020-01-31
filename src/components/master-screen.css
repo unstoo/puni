@@ -5,3 +5,11 @@
     margin-left: auto;
     background-color: white;
 }
+
+@media screen and (min-width: 1600px) {
+    .master-screen{
+        margin: 0;
+        margin-left: auto;
+        margin-right: 10%;
+    }
+}

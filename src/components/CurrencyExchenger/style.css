@@ -37,6 +37,7 @@
 }
 
 .inputBlock{
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 152px;
@@ -51,7 +52,7 @@
 
 .input{
     height: 35px;
-    width: 225px;
+    width: 260px;
     padding-left: 15px;
     box-sizing: border-box;
     border: solid 1px #e9f2f2;
@@ -64,21 +65,25 @@
 }
 
 .select{
-    position: relative;
+    position: absolute;
+    right: 1px;
+    top: 1px;
     padding-left: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
     display: flex;
-    height: 35px;
+    height: 33px;
     width: 35px;
-    border: solid 1px #e9f2f2;
-    border-left: none;
+    border: none;
+    border-left: solid 1px #e9f2f2;
     background-color: #f5fbfb;
     color: #ff9b0f;
 }
 
 .cellsContainer{
     position: absolute;
+    top: 35px;
+    right: 0px;
 }
 
 .cellsContainer.open{
@@ -86,6 +91,7 @@
 }
 
 .cellsContainer.closed{
+    display: none;
     height: 0;
     padding: 0;
     border: 0;
@@ -103,7 +109,7 @@
     padding-bottom: 12px;
     display: flex;
     height: 35px;
-    width: 35px;
+    width: 36px;
     border: solid 1px #e9f2f2;
     border-top: none;
     background-color: #f5fbfb;
@@ -141,7 +147,7 @@
 .down-arrow{
     position: absolute;
     top: 8px;
-    right: 6px;
+    right: 7px;
     font-size: 16px;
     font-weight: bolder;
     font-family: ProximaNova, sans-serif;

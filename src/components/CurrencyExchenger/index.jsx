@@ -9,8 +9,8 @@ import style from './style.css';
 const CurrencyExchenger = () => {
   const currenciesList = [{ currency: 'eur' }, { currency: 'usd' }];
 
-  const [inputOne, setInputOne] = useState();
-  const [inputTwo, setInputTwo] = useState();
+  const [inputOne, setInputOne] = useState(0);
+  const [inputTwo, setInputTwo] = useState(0);
   const [currencyOne, setCurrencyOne] = useState('eur');
   const [currencyTwo, setCurrencyTwo] = useState('eur');
   // const [stateMonitor, setMonitor] = useState('nil');
@@ -194,13 +194,14 @@ const DropDownSelector = ({
 };
 
 const Cell = ({ parentRefId, currency, clickHandler }) => (
-  <div
+  <button
+    type="button"
     className={style.cell + ' ' + style[currency]}
     onClick={clickHandler}
     data-currency={currency}
     data-parentrefid={parentRefId}
     aria-label={`Select: ${currency}`}
-  ></div>
+  ></button>
 );
 
 export default CurrencyExchenger;
